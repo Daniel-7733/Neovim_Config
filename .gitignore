@@ -1,0 +1,9 @@
+# Neovim swap files
+*.swp
+*.swo
+*~
+
+
+# OS
+.DS_Store
+Thumbs.db
