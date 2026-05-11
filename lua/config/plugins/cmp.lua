@@ -22,6 +22,10 @@ return {
       local luasnip = require("luasnip")
 
       cmp.setup({
+        completion = {
+          autocomplete = { require("cmp.types").cmp.TriggerEvent.TextChanged },
+        },
+
         snippet = {
           expand = function(args)
             luasnip.lsp_expand(args.body)
